@@ -39,7 +39,8 @@ class MainActivity : AppCompatActivity() {
         if (resultText.text == "Hello World!"){
             resultText.text = "1"
         }else{
-            var resultNumber = resultText.toString().toInt()
+            //resultText -> resultText.text
+            var resultNumber = resultText.text.toString().toInt()
             if (resultNumber <6){
                 resultNumber++
                 resultText.text = resultNumber.toString()
